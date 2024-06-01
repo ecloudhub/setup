@@ -9,7 +9,7 @@ import subprocess
 name = ''
 email = ''
 options = { 'developer': '', 'android': '', 'ios': '', 'designer': '',
-            'vim': '', 'zsh': '',
+            'vim': '', 'zsh': '', 'flutter': '',
             'animations': '', 'showhiddenfiles': '', 'autoupdate': '', }
 
 
@@ -50,6 +50,9 @@ if options['developer'] == 'y':
 
   while options['ios'] not in ['y', 'n']:
     options['ios'] = raw_input("Do you want to install iOS Tools? (y|n) [n]  ") or "n"
+  
+  while options['flutter'] not in ['y', 'n']:
+    options['flutter'] = raw_input("Do you want to install Flutter SDK? (y|n) [n]  ") or "n"
 
 
 # Other Options
@@ -140,6 +143,10 @@ if options['ios'] == 'y':
   os.system('sudo gem install cocoapods')
   show_notification("We need your password")
   os.system('sudo gem install fastlane --verbose')
+
+if options['flutter'] == 'y':
+  print "Installing Flutter SDK"
+  os.system('brew install --cask flutter')
   
 if options['designer'] == 'y':
   print "Installing Designer Tools"

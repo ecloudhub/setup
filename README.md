@@ -15,7 +15,7 @@ Follow the instructions and that's it :D
 * Brew & Brew Cask with AutoUpdate
 * Node.js, Ruby, Python and Git
 * Visual Studio Code and VIM
-* A bunch of Fonts, including our beloved Dosis
+* A bunch of Fonts
 * Essential Software, including Chrome, iTerm2, Slack, Spotify, and a few more.
 * A lot of OSX tweaks, like disabling the annoying Mac startup sound
 
