@@ -4,8 +4,16 @@ This will install the most popular tools and tweaks we use at ecloud
 
 Open Terminal, type this and press enter:
 
+Python2:
+
 ```shell
 /usr/bin/python -c "$(curl -fsSL https://raw.githubusercontent.com/ecloudhub/setup/master/setup.py)"
+```
+
+Python3:
+
+```shell
+/usr/bin/python -c "$(curl -fsSL https://raw.githubusercontent.com/ecloudhub/setup/python3/setup.py)"
 ```
 
 Follow the instructions and that's it :D
