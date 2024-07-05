@@ -174,7 +174,7 @@ if options['zsh'] == 'y':
           
     # Plugins
     os.system('brew install zsh-autosuggestions zsh-syntax-highlighting bat tldr diff-so-fancy')
-    os.system('echo "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=\\'fg=#777\\'" >> ~/.zshrc')
+    os.system('echo "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=\'fg=#777\'" >> ~/.zshrc')
     os.system('sed -i .zshrc -e "s/plugins=(git)/plugins=(git brew bgnotify zsh-autosuggestions zsh-syntax-highlighting)/"')
     os.system('echo "" >> ~/.zshrc')
     os.system('echo "# syntax-highlighting must be last" >> ~/.zshrc')
@@ -186,7 +186,7 @@ if options['zsh'] == 'y':
     os.system('echo "" >> ~/.zshrc')
     os.system('echo "# Dracula Theme" >> ~/.zshrc')
     os.system('echo "export ZSH=$HOME/.oh-my-zsh" >> ~/.zshrc')
-    os.system('echo "ZSH_THEME=\\'dracula\\'" >> ~/.zshrc')
+    os.system('echo "ZSH_THEME=\'dracula\'" >> ~/.zshrc')
     os.system('echo "source $ZSH/oh-my-zsh.sh" >> ~/.zshrc')
 
   os.system('chsh -s $(which zsh)')
