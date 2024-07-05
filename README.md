@@ -13,7 +13,7 @@ Python2:
 Python3:
 
 ```shell
-/usr/bin/python -c "$(curl -fsSL https://raw.githubusercontent.com/ecloudhub/setup/python3/setup.py)"
+python3 -c "$(curl -fsSL https://raw.githubusercontent.com/ecloudhub/setup/python3/setup.py)"
 ```
 
 Follow the instructions and that's it :D
